@@ -1,6 +1,6 @@
 import type { UIStrings } from "./types";
 
-export { tplStr } from "./format";
+export { formatDatetime, tplStr } from "./format";
 
 const modules = import.meta.glob<{ default: UIStrings }>("./lang/*.ts", {
   eager: true,
