@@ -8,4 +8,70 @@ import type { CollectionEntry } from "astro:content";
 type Props = {
   post: CollectionEntry<"posts">;
 };
+
+const { post: _post } = Astro.props;
 ---
+
+<div class="giscus-wrapper border-border mt-10 border-t pt-8">
+  <div class="giscus"></div>
+</div>
+
+<script
+  src="https://giscus.app/client.js"
+  data-repo="lkduy2602/imduy"
+  data-repo-id="R_kgDOVyzIlw"
+  data-category="Announcements"
+  data-category-id="DIC_kwDOVyzIl84DLbBM"
+  data-mapping="pathname"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="bottom"
+  data-theme="preferred_color_scheme"
+  data-lang="vi"
+  crossorigin="anonymous"
+  async
+  data-astro-rerun></script>
+
+<script is:inline data-astro-rerun>
+  (() => {
+    function getGiscusTheme() {
+      const theme = document.documentElement.getAttribute("data-theme");
+      if (theme === "dark") return "transparent_dark";
+      if (theme === "light") return "light";
+      return window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "transparent_dark"
+        : "light";
+    }
+
+    function setGiscusTheme() {
+      const iframe = document.querySelector("iframe.giscus-frame");
+      if (!iframe || !iframe.contentWindow) return;
+      iframe.contentWindow.postMessage(
+        { giscus: { setConfig: { theme: getGiscusTheme() } } },
+        "https://giscus.app"
+      );
+    }
+
+    // Update theme when data-theme attribute on <html> changes
+    const observer = new MutationObserver(() => {
+      setGiscusTheme();
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["data-theme"],
+    });
+
+    // Also sync theme once the giscus iframe finishes loading
+    window.addEventListener(
+      "message",
+      event => {
+        if (event.origin !== "https://giscus.app") return;
+        if (!(typeof event.data === "object" && event.data.giscus)) return;
+        setGiscusTheme();
+      },
+      { once: true }
+    );
+  })();
+</script>
