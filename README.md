@@ -1,166 +1,159 @@
-# AstroPaper 📄
+# ImDuy 🌐
 
-![AstroPaper](public/default-og.jpg)
-[![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/community/file/1356898632249991861)
-![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![GitHub](https://img.shields.io/github/license/satnaing/astro-paper?color=%232F3741&style=for-the-badge)
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white&style=for-the-badge)](https://conventionalcommits.org)
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=for-the-badge)](http://commitizen.github.io/cz-cli/)
+[![Website](https://img.shields.io/badge/Website-imduy.id.vn-38bdf8?style=for-the-badge&logo=googlechrome&logoColor=white)](https://imduy.id.vn)
+[![Astro](https://img.shields.io/badge/Astro-7.4-BC52EE?style=for-the-badge&logo=astro&logoColor=white)](https://astro.build)
+[![TypeScript](https://img.shields.io/badge/TypeScript-6.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+[![Cloudflare Pages](https://img.shields.io/badge/Cloudflare_Pages-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)](https://pages.cloudflare.com)
+[![License](https://img.shields.io/badge/License-MIT-green.style?style=for-the-badge)](LICENSE)
 
-AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro blog theme. This theme is designed and crafted based on [my personal blog](https://satnaing.dev/blog).
+![ImDuy Banner](public/default-og.jpg)
 
-Read [the blog posts](https://astro-paper.pages.dev/posts/) or check [the README Documentation Section](#-documentation) for more info.
-
-## 🔥 Features
-
-- [x] type-safe markdown
-- [x] super fast performance
-- [x] accessible (Keyboard/VoiceOver)
-- [x] responsive (mobile ~ desktops)
-- [x] SEO-friendly
-- [x] light & dark mode
-- [x] static search ([Pagefind](https://pagefind.app/))
-- [x] draft posts & pagination
-- [x] sitemap & rss feed
-- [x] MDX support
-- [x] table of contents beside posts
-- [x] followed best practices
-- [x] highly customizable
-- [x] dynamic OG image generation for blog posts ([Blog Post](https://astro-paper.pages.dev/posts/dynamic-og-image-generation-in-astropaper-blog-posts/))
-- [x] i18n ready
-
-_Note: I've tested screen-reader accessibility of AstroPaper using **VoiceOver** on Mac and **TalkBack** on Android. I couldn't test all other screen-readers out there. However, accessibility enhancements in AstroPaper should be working fine on others as well._
-
-## ✅ Lighthouse Score
-
-<p align="center">
-  <a href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fastro-paper.pages.dev%2F&form_factor=desktop">
-    <img width="710" alt="AstroPaper Lighthouse Score" src="AstroPaper-lighthouse-score.svg">
-  </a>
-</p>
-
-## 🚀 Project Structure
-
-Inside of AstroPaper, you'll see the following folders and files:
-
-```bash
-/
-├── public/
-│   ├── pagefind/          # auto-generated on build
-│   ├── favicon.svg
-│   └── default-og.jpg
-├── src/
-│   ├── assets/
-│   │   ├── icons/
-│   │   └── images/
-│   ├── components/
-│   ├── content/
-│   │   ├── pages/
-│   │   │   └── about.md
-│   │   └── posts/
-│   │       └── some-blog-posts.md
-│   ├── i18n/
-│   ├── layouts/
-│   ├── pages/
-│   ├── scripts/
-│   ├── styles/
-│   ├── types/
-│   ├── utils/
-│   ├── config.ts
-│   └── content.config.ts
-├── astro-paper.config.ts  # user-defined configurations
-└── astro.config.ts
-```
-
-All blog posts are stored in the `src/content/posts/` directory. You can organise posts into subdirectories — the subdirectory name becomes part of the post URL.
-
-## 📖 Documentation
-
-Documentation can be read in two formats\_ _markdown_ & _blog post_.
-
-- Configuration - [markdown](src/content/posts/how-to-configure-astropaper-theme.md) | [blog post](https://astro-paper.pages.dev/posts/how-to-configure-astropaper-theme/)
-- Add Posts - [markdown](src/content/posts/adding-new-post.md) | [blog post](https://astro-paper.pages.dev/posts/adding-new-posts-in-astropaper-theme/)
-- Customize Color Schemes - [markdown](src/content/posts/customizing-astropaper-theme-color-schemes.md) | [blog post](https://astro-paper.pages.dev/posts/customizing-astropaper-theme-color-schemes/)
-- Predefined Color Schemes - [markdown](src/content/posts/predefined-color-schemes.md) | [blog post](https://astro-paper.pages.dev/posts/predefined-color-schemes/)
-
-## 💻 Tech Stack
-
-**Main Framework** - [Astro](https://astro.build/)  
-**Type Checking** - [TypeScript](https://www.typescriptlang.org/)  
-**Styling** - [TailwindCSS](https://tailwindcss.com/)  
-**UI/UX** - [Figma Design File](https://www.figma.com/community/file/1356898632249991861)  
-**Static Search** - [Pagefind](https://pagefind.app/)  
-**Icons** - [Tablers](https://tabler-icons.io/)  
-**Code Formatting** - [Prettier](https://prettier.io/)  
-**Deployment** - [Cloudflare Pages](https://pages.cloudflare.com/)  
-**Linting** - [ESLint](https://eslint.org)  
-**Dynamic OG images** - [Satori](https://github.com/vercel/satori) + [Sharp](https://sharp.pixelplumbing.com/) + [Astro Fonts](https://docs.astro.build/en/guides/fonts/)
-
-## 👨🏻‍💻 Running Locally
-
-You can start using this project locally by running the following command in your desired directory:
-
-```bash
-# pnpm
-pnpm create astro@latest --template satnaing/astro-paper
-
-# pnpm
-pnpm create astro@latest -- --template satnaing/astro-paper
-
-# yarn
-yarn create astro --template satnaing/astro-paper
-
-# bun
-bun create astro@latest -- --template satnaing/astro-paper
-```
-
-Then start the project by running the following commands:
-
-```bash
-# install dependencies if you haven't done so in the previous step.
-pnpm install
-
-# start running the project
-pnpm dev
-```
-
-## Google Site Verification (optional)
-
-You can add your [Google Site Verification HTML tag](https://support.google.com/webmasters/answer/9008080#meta_tag_verification&zippy=%2Chtml-tag) by setting `site.googleVerification` in `astro-paper.config.ts`:
-
-```ts file="astro-paper.config.ts"
-export default defineAstroPaperConfig({
-  site: {
-    // ...
-    googleVerification: "your-google-site-verification-value",
-  },
-  // ...
-});
-```
-
-> See [this discussion](https://github.com/satnaing/astro-paper/discussions/334#discussioncomment-10139247) for adding AstroPaper to the Google Search Console.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command          | Action                                                                                                                           |
-| :--------------- | :------------------------------------------------------------------------------------------------------------------------------- |
-| `pnpm install`   | Installs dependencies                                                                                                            |
-| `pnpm dev`       | Starts local dev server at `localhost:4321`                                                                                      |
-| `pnpm build`     | Type-checks, builds the site, runs Pagefind indexing, and copies the index to `public/pagefind/`                                 |
-| `pnpm preview`   | Preview your build locally, before deploying                                                                                     |
-| `pnpm sync`      | Generates TypeScript types for all Astro modules. [Learn more](https://docs.astro.build/en/reference/cli-reference/#astro-sync). |
-| `pnpm astro ...` | Run CLI commands like `astro add`, `astro check`                                                                                 |
-
-## ✨ Feedback & Suggestions
-
-If you have any suggestions/feedback, you can contact me via [my email](mailto:satnaingdev+astropaper@gmail.com). Alternatively, feel free to open an issue if you find bugs or want to request new features.
-
-## 📜 License
-
-Licensed under the MIT License, Copyright © 2026
+> **ImDuy** là blog cá nhân của **Lê Khánh Duy** — không gian ghi chép kỹ thuật, chia sẻ kiến thức phát triển phần mềm, kiến trúc hệ thống và những trải nghiệm thực tế trong quá trình xây dựng sản phẩm công nghệ.
 
 ---
 
-Made with 🤍 by [Sat Naing](https://satnaing.dev) 👨🏻‍💻 and [contributors](https://github.com/satnaing/astro-paper/graphs/contributors).
+## 🌟 Điểm nổi bật (Key Features)
+
+- ⚡ **Tốc độ tải trang siêu nhanh (Zero-JS SSG)**: Xây dựng trên nền tảng Astro 7 với cơ chế Static Site Generation, tối ưu hóa điểm số Lighthouse 100/100.
+- 🎨 **Thiết kế Vercel / Linear Aesthetic**: Bảng màu hiện đại Deep Onyx (`#09090b`) kết hợp ánh sáng Electric Blue neon (`#38bdf8`), chuyển đổi Dark/Light mode tức thì.
+- ✍️ **Typography Tiếng Việt chuẩn mực**:
+  - Văn bản & Tiêu đề: **Be Vietnam Pro** hiển thị sắc nét dấu tiếng Việt.
+  - Khối mã nguồn: **JetBrains Mono** chuyên nghiệp cho lập trình viên.
+  - Phông chữ tự lưu trữ (self-hosted) 100% khi build, không phụ thuộc vào CDN bên thứ ba lúc chạy.
+- 💬 **Bình luận Giscus qua GitHub Discussions**: Hệ thống bình luận serverless, lưu trữ bảo mật trên GitHub, tự động đồng bộ theme Dark/Light theo website.
+- 🔍 **Tìm kiếm tĩnh toàn văn (Pagefind)**: Tìm kiếm bài viết tức thì ngay trên client mà không cần máy chủ hay cơ sở dữ liệu riêng.
+- 🖼️ **OpenGraph động & 3D Glassmorphic Cover**: Tự động sinh ảnh cover đẹp mắt khi chia sẻ bài viết lên mạng xã hội (Facebook, LinkedIn, Zalo, Twitter/X).
+- 📱 **Responsive & Accessible**: Tối ưu hiển thị hoàn hảo từ điện thoại di động đến màn hình lớn, tuân thủ các chuẩn trợ năng (A11y).
+- 🏷️ **Quản lý nội dung khoa học**: Hỗ trợ phân loại bài viết theo Tag, lưu trữ (Archives), phân trang và phân cấp bài viết.
+- 📡 **Tích hợp sẵn RSS Feed & Sitemap**: Tự động sinh `/rss.xml` và `/sitemap-index.xml` hỗ trợ SEO tối đa.
+
+---
+
+## 💻 Công nghệ sử dụng (Tech Stack)
+
+| Thành phần            | Công nghệ                                                                              |
+| :-------------------- | :------------------------------------------------------------------------------------- |
+| **Framework**         | [Astro v7](https://astro.build/) (Static Output)                                       |
+| **Ngôn ngữ**          | [TypeScript](https://www.typescriptlang.org/)                                          |
+| **Styling**           | [TailwindCSS v4](https://tailwindcss.com/) + Custom CSS Variables                      |
+| **Typography**        | Be Vietnam Pro & JetBrains Mono (Astro Fonts API)                                      |
+| **Công cụ tìm kiếm**  | [Pagefind](https://pagefind.app/)                                                      |
+| **Bình luận**         | [Giscus](https://giscus.app/) (GitHub Discussions API)                                 |
+| **Code Highlighting** | [Shiki](https://shiki.style/) (`github-dark` & `github-light`)                         |
+| **Sinh ảnh OG**       | [Satori](https://github.com/vercel/satori) + [Sharp](https://sharp.pixelplumbing.com/) |
+| **Hosting & CDN**     | [Cloudflare Pages](https://pages.cloudflare.com/)                                      |
+
+---
+
+## 📂 Cấu trúc thư mục (Project Structure)
+
+```bash
+imduy/
+├── public/                 # File tĩnh phục vụ trực tiếp
+│   ├── favicon.svg         # Favicon vector chữ D Electric Blue
+│   ├── favicon.ico         # Favicon đa độ phân giải
+│   ├── default-og.jpg      # Ảnh OpenGraph mặc định (1200x630)
+│   └── pagefind/           # Chỉ mục tìm kiếm (tự sinh khi build)
+├── src/
+│   ├── assets/             # Hình ảnh và icon vector
+│   ├── components/         # Các Astro / React component dùng lại
+│   ├── content/            # Quản lý bài viết & trang tĩnh
+│   │   ├── pages/about.md  # Trang Giới thiệu cá nhân
+│   │   └── posts/          # Danh sách bài viết (Markdown/MDX)
+│   ├── custom/             # Vùng tùy biến độc lập với theme gốc
+│   │   ├── Head.astro      # Chèn mã theo dõi, analytics vào <head>
+│   │   ├── PostEnd.astro   # Tích hợp Giscus Comments ở cuối bài viết
+│   │   └── BodyEnd.astro   # Chèn script trước thẻ </body>
+│   ├── i18n/               # Cấu hình bản địa hóa Tiếng Việt (vi)
+│   ├── layouts/            # Layout chung cho toàn bộ trang web
+│   ├── pages/              # Routing của Astro (Home, Posts, Tags...)
+│   └── styles/             # Global CSS, Typography và Theme color
+├── astro-paper.config.ts   # Cấu hình siêu dữ liệu trang web (ImDuy)
+├── astro.config.ts         # Cấu hình Astro integrations, fonts & markdown
+└── package.json            # Quản lý dependencies & build scripts
+```
+
+---
+
+## 🚀 Khởi chạy cục bộ (Getting Started)
+
+### Yêu cầu môi trường
+
+- **Node.js**: `>= 22.23.4` (khuyên dùng Node 22 LTS)
+- **Package Manager**: [pnpm](https://pnpm.io/) (`>= 10.x`)
+
+### Các bước cài đặt
+
+1. **Clone repository về máy**:
+
+   ```bash
+   git clone https://github.com/lkduy2602/imduy.git
+   cd imduy
+   ```
+
+2. **Cài đặt các gói phụ thuộc**:
+
+   ```bash
+   pnpm install
+   ```
+
+3. **Chạy máy chủ phát triển (Development Server)**:
+
+   ```bash
+   pnpm dev
+   ```
+
+   Mở trình duyệt tại [http://localhost:4321](http://localhost:4321) để xem website.
+
+4. **Kiểm tra mã nguồn & Kiểm thử Type**:
+
+   ```bash
+   pnpm astro check
+   ```
+
+5. **Biên dịch bản chạy chính thức (Production Build)**:
+
+   ```bash
+   pnpm build
+   ```
+
+   Lệnh này sẽ biên dịch toàn bộ HTML tĩnh, sinh chỉ mục Pagefind và lưu vào thư mục `dist/`.
+
+6. **Xem trước bản Build (Preview)**:
+   ```bash
+   pnpm preview
+   ```
+
+---
+
+## 🌐 Triển khai lên Cloudflare Pages (Deployment)
+
+Dự án được cấu hình sẵn để triển khai tĩnh hoàn toàn trên **Cloudflare Pages**:
+
+1. Kết nối repository `lkduy2602/imduy` với Cloudflare Pages.
+2. Thiết lập thông số build:
+   - **Framework preset**: `Astro`
+   - **Build command**: `pnpm build`
+   - **Build output directory**: `dist`
+3. Cài đặt biến môi trường trong Cloudflare Dashboard:
+   - `NODE_VERSION` = `22`
+   - `PNPM_VERSION` = `10`
+4. Cấu hình tên miền tùy chỉnh: Thêm `imduy.id.vn` trong tab **Custom domains**.
+
+---
+
+## 👤 Tác giả (Author)
+
+**Lê Khánh Duy**
+
+- Website: [imduy.id.vn](https://imduy.id.vn)
+- LinkedIn: [linkedin.com/in/lkduy2602](https://www.linkedin.com/in/lkduy2602/)
+- GitHub: [@lkduy2602](https://github.com/lkduy2602)
+- Email: [lkduy2602@gmail.com](mailto:lkduy2602@gmail.com)
+
+---
+
+## 📜 Giấy phép (License)
+
+Dự án được phát triển dựa trên theme mã nguồn mở [AstroPaper](https://github.com/satnaing/astro-paper) của [Sat Naing](https://satnaing.dev) và được phát hành theo giấy phép [MIT License](LICENSE).
